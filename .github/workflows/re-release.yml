@@ -30,7 +30,8 @@ jobs:
 
     - name: Move one commit back
       run:
-        git reset --hard HEAD~1
+        git fetch --prune --unshallow || true
+        git checkout HEAD^
 
     - name: Set up Java
       uses: actions/setup-java@v4
