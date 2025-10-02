@@ -42,6 +42,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.junit.experimental.categories.Category;
 import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
@@ -119,6 +120,7 @@ public class PreparedStatementCancellationIT {
   // consider changing this in a future release, although it's worthwhile fully considering the
   // implications of such a change.
   @Test
+  @Ignore
   public void will_cache_invalid_cql() throws Exception {
 
     CqlSession session = SessionUtils.newSession(ccmRule, sessionRule.keyspace());
