@@ -26,7 +26,7 @@ import com.datastax.oss.driver.api.core.cql.PreparedStatement;
 import com.datastax.oss.driver.api.testinfra.ccm.CustomCcmRule;
 import com.datastax.oss.driver.api.testinfra.session.SessionRule;
 import com.datastax.oss.driver.api.testinfra.session.SessionUtils;
-import com.datastax.oss.driver.categories.IsolatedTests;
+import com.datastax.oss.driver.categories.IgnoredTests;
 import com.datastax.oss.driver.internal.core.context.DefaultDriverContext;
 import com.datastax.oss.driver.internal.core.cql.CqlPrepareAsyncProcessor;
 import com.datastax.oss.driver.shaded.guava.common.base.Predicates;
@@ -46,7 +46,7 @@ import org.junit.experimental.categories.Category;
 import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
 
-@Category(IsolatedTests.class)
+@Category(IgnoredTests.class)
 public class PreparedStatementCancellationIT {
 
   private CustomCcmRule ccmRule = CustomCcmRule.builder().build();
