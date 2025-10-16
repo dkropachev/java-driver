@@ -237,7 +237,7 @@ test-integration-scylla: .install-guava-shaded .prepare-scylla-ccm resolve-scyll
 		echo "ScyllaDB version ${SCYLLA_VERSION} was not resolved"
 		exit 1
 	fi
-	mvn -B -e verify -Dccm.version=$${SCYLLA_VERSION_RESOLVED} -Dccm.distribution=scylla -Dfmt.skip=true -Dclirr.skip=true -Danimal.sniffer.skip=true
+	mvn -B verify -Dccm.version=$${SCYLLA_VERSION_RESOLVED} -Dccm.distribution=scylla -Dfmt.skip=true -Dclirr.skip=true -Danimal.sniffer.skip=true
 
 test-integration-cassandra: .install-guava-shaded .prepare-scylla-ccm resolve-cassandra-version
 	@if [[ -z "$${CASSANDRA_VERSION_RESOLVED}" ]]; then
@@ -247,7 +247,7 @@ test-integration-cassandra: .install-guava-shaded .prepare-scylla-ccm resolve-ca
 		echo "Cassandra version ${CASSANDRA_VERSION} was not resolved"
 		exit 1
 	fi
-	mvn -B -e verify -Dccm.version=$${CASSANDRA_VERSION_RESOLVED} -Dfmt.skip=true -Dclirr.skip=true -Danimal.sniffer.skip=true
+	mvn -B verify -Dccm.version=$${CASSANDRA_VERSION_RESOLVED} -Dfmt.skip=true -Dclirr.skip=true -Danimal.sniffer.skip=true
 
 check-no-compile-warnings:
 	@$(MAKE) compile-all | grep WARNING >/tmp/all-compile-warnings.log || true
