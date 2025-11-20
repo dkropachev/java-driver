@@ -50,7 +50,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <cassandra.version>3.11.2</cassandra.version>
-        <scylla.version />
+        <scylla.version/>
         <java.version>8</java.version>
         <log4j.version>1.2.17</log4j.version>
         <slf4j.version>1.7.36</slf4j.version>
@@ -73,7 +73,7 @@
         <jnr-posix.version>3.1.19</jnr-posix.version>
         <groovy.version>2.4.21</groovy.version>
         <jax-rs.version>2.0.1</jax-rs.version>
-        <jersey.version>2.23.1</jersey.version>
+        <jersey.version>2.46</jersey.version>
         <hk2.version>2.4.0-b34</hk2.version>
         <felix.version>4.4.1</felix.version>
         <!-- more recent versions of pax-exam require JDK7+ -->
@@ -94,7 +94,7 @@
         <test.groups>unit</test.groups>
         <pushChanges>false</pushChanges>
         <test.osgi.skip>true</test.osgi.skip>
-        <javadoc.opts />
+        <javadoc.opts/>
         <!-- Append "-fedora" to os.detected.classifier for Fedora systems
              (see https://netty.io/wiki/forked-tomcat-native.html) -->
         <!-- Commenting this out since artifact in use right now is statically
@@ -941,7 +941,7 @@
                             <!-- This requires includes to be explicitly specified by implementing classes.
                                  This is needed to prevent creating a JVM fork for each test, even those that don't
                                  have the isolated group. -->
-                            <includes />
+                            <includes/>
                         </configuration>
                     </plugin>
                 </plugins>
