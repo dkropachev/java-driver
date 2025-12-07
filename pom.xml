@@ -50,7 +50,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <cassandra.version>3.11.2</cassandra.version>
-        <scylla.version />
+        <scylla.version/>
         <java.version>8</java.version>
         <log4j.version>1.2.17</log4j.version>
         <slf4j.version>1.7.36</slf4j.version>
@@ -61,7 +61,7 @@
         <netty-tcnative.version>2.0.70.Final</netty-tcnative.version>
         <metrics.version>3.2.6</metrics.version>
         <snappy.version>1.1.10.7</snappy.version>
-        <lz4.version>1.8.0</lz4.version>
+        <lz4.version>1.8.1</lz4.version>
         <hdr.version>2.2.2</hdr.version>
         <jackson.version>2.15.4</jackson.version>
         <joda.version>2.12.7</joda.version>
@@ -94,7 +94,7 @@
         <test.groups>unit</test.groups>
         <pushChanges>false</pushChanges>
         <test.osgi.skip>true</test.osgi.skip>
-        <javadoc.opts />
+        <javadoc.opts/>
         <!-- Append "-fedora" to os.detected.classifier for Fedora systems
              (see https://netty.io/wiki/forked-tomcat-native.html) -->
         <!-- Commenting this out since artifact in use right now is statically
@@ -941,7 +941,7 @@
                             <!-- This requires includes to be explicitly specified by implementing classes.
                                  This is needed to prevent creating a JVM fork for each test, even those that don't
                                  have the isolated group. -->
-                            <includes />
+                            <includes/>
                         </configuration>
                     </plugin>
                 </plugins>
