@@ -50,7 +50,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <cassandra.version>3.11.2</cassandra.version>
-        <scylla.version />
+        <scylla.version/>
         <java.version>8</java.version>
         <log4j.version>1.2.17</log4j.version>
         <slf4j.version>1.7.36</slf4j.version>
@@ -85,7 +85,7 @@
         <wiremock.version>2.27.2</wiremock.version>
         <commons-exec.version>1.3</commons-exec.version>
         <scassandra.version>1.1.2</scassandra.version>
-        <logback.version>1.2.13</logback.version>
+        <logback.version>1.5.25</logback.version>
         <byteman.version>3.0.8</byteman.version>
         <burningwave.tools.version>0.27.2</burningwave.tools.version>
         <surefire.version>3.5.4</surefire.version>
@@ -94,7 +94,7 @@
         <test.groups>unit</test.groups>
         <pushChanges>false</pushChanges>
         <test.osgi.skip>true</test.osgi.skip>
-        <javadoc.opts />
+        <javadoc.opts/>
         <!-- Append "-fedora" to os.detected.classifier for Fedora systems
              (see https://netty.io/wiki/forked-tomcat-native.html) -->
         <!-- Commenting this out since artifact in use right now is statically
@@ -941,7 +941,7 @@
                             <!-- This requires includes to be explicitly specified by implementing classes.
                                  This is needed to prevent creating a JVM fork for each test, even those that don't
                                  have the isolated group. -->
-                            <includes />
+                            <includes/>
                         </configuration>
                     </plugin>
                 </plugins>
