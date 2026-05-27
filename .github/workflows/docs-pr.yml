@@ -10,6 +10,8 @@ on:
     branches:
     - scylla-4.x
     paths:
+    - '.github/workflows/docs-pages.yml'
+    - '.github/workflows/docs-pr.yml'
     - 'docs/**'
     - 'faq/**'
     - 'manual/**'
@@ -45,3 +47,6 @@ jobs:
 
       - name: Build docs
         run: make -C docs test
+
+      - name: Build published docs
+        run: make -C docs multiversion

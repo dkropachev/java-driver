@@ -8,6 +8,8 @@ on:
     - scylla-4.x
     - 'scylla-**'
     paths:
+    - '.github/workflows/docs-pages.yml'
+    - '.github/workflows/docs-pr.yml'
     - 'docs/**'
     - 'faq/**'
     - 'manual/**'
